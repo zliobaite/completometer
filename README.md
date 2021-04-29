@@ -1,9 +1,10 @@
-# completometer
+# Completometer
+
 This is a repository to support a research paper:
 
 Zliobaite, I and Fortelius, M. (2021). Completeness of the mammalian fossil record revisited. In review. 
 
-For the time being the code is not extensively cdocumented, I hope to improve that upon publication of the manuscript. The structure of the repository is:
+For the time being the code is not extensively documented, I hope to improve that upon publication of the manuscript. The structure of the repository is:
 
     1_fossil_data_preprocessing
 The folder contains present day biodiversitydataset and dumps of NOW database and PBDB used for counting fossil species for this analysis. The folder also contains R scripts for data preprocessing.
