@@ -12,7 +12,7 @@ dd <- seq(0,4,0.01)
 CC <- (Nfos/Nnow)*(dd/(dd+t))
 
 pdf('fig_sensitivity1.pdf',height = 3.5,width=4)
-plot(dd,CC*100,type='l',lwd=3,xlab = 'Species duration, Ma',ylab = 'Completeness, %',ylim = c(0,16))
+plot(dd,CC*100,type='l',lwd=3,xlab = 'Species duration, Myr',ylab = 'Completeness, %',ylim = c(0,16))
 dev.off()
 
 alf <- 2
@@ -26,5 +26,5 @@ bb <-  ((aa + (1-aa)*(23-5.333)/23) + aa)/2
 CC2 <- Nfos/(Nnow*aa + Nnow*bb*t/d)
 
 pdf('fig_sensitivity2.pdf',height = 3.5,width=4)
-plot(aa,CC2*100,type='l',lwd=3,xlab = '(increasing) -- Diversity -- (decreasng)',ylab = 'Completeness, %',ylim = c(0,16),log="x")
+plot(aa,CC2*100,type='l',lwd=3,xlab = '(increasing) -- Diversity -- (decreasing)',ylab = 'Completeness, %',ylim = c(0,16),log="x")
 dev.off()
